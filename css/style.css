@@ -358,8 +358,14 @@ form {
     .chatbot .user-account .upgrade-btn {
     display: none;
     }
+    .version-dropdown {
+        display: none;
+    }
 
     /* Form SEction */
+    form {
+        margin-bottom: 20px;
+    }
     .main-app form .form-wrapper :where(.canvas) {
         display: none;
     }
@@ -378,12 +384,16 @@ form {
     }
 
 /* Navbar Seciton */
-    .navbar {
+    .navbar.hide {
     background: var(--nav-bg-color);
-    width: 0px;
+    width: 0px !important;
     height: 100vh;
     position: absolute;
-    display: none;
+    display: none !important;
+    }
+    .navbar {
+        width: 340px !important;
+        position: absolute;
     }
 
 
